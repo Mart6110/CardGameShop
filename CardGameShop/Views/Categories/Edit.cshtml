@@ -1,0 +1,13 @@
+﻿@model CoreBusiness.Category
+
+@section title {
+    @if(Model != null)
+    {
+        <h1 class="display-4">Category: @Model.Name</h1>
+    }
+}
+
+@if (Model != null)
+{
+    <partial name="_Category" model="@Model" />
+}
